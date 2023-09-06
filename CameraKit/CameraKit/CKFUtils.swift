@@ -9,7 +9,7 @@
 import UIKit
 
 private extension UIDeviceOrientation {
-    var imageOrientation: UIImage.Orientation {
+    var imageOrientation: UIImageOrientation {
         switch self {
         case .portraitUpsideDown:
             return .left
@@ -22,7 +22,7 @@ private extension UIDeviceOrientation {
         }
     }
     
-    var imageOrientationMirrored: UIImage.Orientation {
+    var imageOrientationMirrored: UIImageOrientation {
         switch self {
         case .portraitUpsideDown:
             return .left
